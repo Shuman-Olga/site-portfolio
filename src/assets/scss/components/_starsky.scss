@@ -1,0 +1,352 @@
+#skystar {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#stars {
+  width: 3px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform-origin: 0 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  animation: rotate 270s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sky {
+  background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(52, 45, 68) 80%, rgb(76, 70, 90));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.constellation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  // animation: rotate 600s infinite linear;
+}
+
+.star {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: star;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.star.style1 {
+  animation-duration: 0.5s;
+  animation-name: star;
+}
+.star.style2 {
+  animation-duration: 1s;
+  animation-name: star;
+}
+.star.style3 {
+  animation-duration: 1.5s;
+  animation-name: star;
+}
+.star.style4 {
+  animation-duration: 2s;
+  animation-name: starBig;
+}
+
+.star.size1 {
+  width: 1px;
+  height: 1px;
+}
+.star.size2 {
+  width: 2px;
+  height: 2px;
+}
+.star.size3 {
+  width: 3px;
+  height: 3px;
+}
+
+.star.opacity1 {
+  opacity: 1;
+}
+.star.opacity2 {
+  opacity: 0.5;
+}
+.star.opacity3 {
+  opacity: 0.1;
+}
+
+.meteor {
+  position: absolute;
+  background-color: #fff;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  transform: rotate(-35deg);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.meteor:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 85px solid white;
+  position: absolute;
+  left: 2px;
+  top: 0;
+}
+
+.meteor.style1 {
+  animation-name: meteorStyle1;
+}
+.meteor.style2 {
+  animation-name: meteorStyle2;
+}
+.meteor.style3 {
+  animation-name: meteorStyle3;
+}
+.meteor.style4 {
+  animation-name: meteorStyle4;
+}
+
+.luna {
+  position: absolute;
+  right: 200px;
+  top: 150px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+  background-color: #fff;
+  animation-name: luna;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+.luna .textura {
+  background-image: url('../../img/bgMoon.png');
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.4;
+}
+
+.glade {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.glade img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes dim {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes star {
+  0% {
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+  }
+}
+
+@keyframes starBig {
+  0% {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+  }
+  20% {
+    background-color: #ffc4c4;
+    box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);
+  }
+  80% {
+    background-color: #c4cfff;
+    box-shadow: 0 0 10px 0px rgb(196, 207, 255, 1);
+  }
+  100% {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes meteorStyle1 {
+  0% {
+    opacity: 0;
+    right: 300px;
+    top: 100px;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    right: 1000px;
+    top: 600px;
+  }
+}
+
+@keyframes meteorStyle2 {
+  0% {
+    opacity: 0;
+    right: 700px;
+    top: 100px;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 1400px;
+    top: 600px;
+  }
+}
+
+@keyframes meteorStyle3 {
+  0% {
+    opacity: 0;
+    right: 300px;
+    top: 300px;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 1000px;
+    top: 800px;
+  }
+}
+
+@keyframes meteorStyle4 {
+  0% {
+    opacity: 0;
+    right: 700px;
+    top: 300px;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 1400px;
+    top: 800px;
+  }
+}
+
+@keyframes luna {
+  0% {
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+  50% {
+    box-shadow: 0 0 80px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+  100% {
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.arrow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.arrow:before,
+.arrow:after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-left: 10px solid #4d4250;
+  border-bottom: 10px solid #4d4250;
+  animation: arrow 3s linear infinite;
+}
+.arrow:after {
+  animation: arrow 3s linear infinite -1.5s;
+}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    transform: translate(0, -53px) rotate(-45deg);
+  }
+  10%,
+  90% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(-45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 53px) rotate(-45deg);
+  }
+}
