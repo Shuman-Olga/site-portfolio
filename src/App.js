@@ -17,14 +17,14 @@ function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     // setLoading(true);
-    // fetch('http://localhost:3000')
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     setLoading(false);
-    //   });
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    fetch('https://main--shuman-olga.netlify.app/')
+      .then((res) => res.json())
+      .then((data) => {
+        setLoading(false);
+      });
+    // setTimeout(() => {
+    //   setLoading(false);
+    // }, 2000);
   }, []);
   return (
     <>
