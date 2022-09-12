@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: all 3s;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    190deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 8, 1) 30%,
+    rgba(173, 173, 173, 1) 100%
+  );
+  a {
+    color: #adadad;
+    &:hover {
+      color: azure;
+    }
+  }
+  .nav-span {
+    font-size: 2rem;
+    color: rgb(66, 0, 248);
+    letter-spacing: 0.6rem;
+    font-family: 'Combo', cursive;
+  }
+}
