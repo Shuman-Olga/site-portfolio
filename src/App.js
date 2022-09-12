@@ -11,21 +11,25 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contacts from './components/Contacts';
 import Skills from './components/Skills';
+import Loader from './components/Loader';
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setLoading(true);
+    // setLoading(true);
+    // fetch('http://localhost:3000')
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setLoading(false);
+    //   });
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 2000);
   }, []);
   return (
     <>
       {loading ? (
-        <div className="loader-container">
-          <div className="spinner"></div>
-        </div>
+        <Loader />
       ) : (
         <BrowserRouter>
           <Header />
