@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import img from '../assets/img/Layer-37.png';
 import img1 from '../assets/img/skills/skills-frontend.png';
 import img2 from '../assets/img/skills/skills-backend.png';
 import img3 from '../assets/img/skills/skills-hard.png';
