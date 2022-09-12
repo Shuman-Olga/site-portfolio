@@ -16,16 +16,13 @@ import Loader from './components/Loader';
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    // setLoading(true);
-    fetch('https://main--shuman-olga.netlify.app/')
-      .then((res) => res.json())
+    fetch('https://shuman-olga.netlify.app/')
+      .then((res) => console.log(res.status))
       .then((data) => {
         setLoading(false);
       });
-    // setTimeout(() => {
-    //   setLoading(false);
-    // }, 2000);
   }, []);
+
   return (
     <>
       {loading ? (
