@@ -27,7 +27,8 @@ const Portfolio = () => {
         <Row xs={1} md={3} className="g-4">
           <Col>
             <Card>
-              <Card.Img variant="top" src={img1} />
+              <Card.Title className="title-card">Сервис для изучения английского язык</Card.Title>
+              <Card.Img className="img-filter" variant="top" src={img1} />
               <Card className="card-hover">
                 <Card.Body>
                   <Card.Title>Сервис для изучения английского язык</Card.Title>
@@ -41,7 +42,8 @@ const Portfolio = () => {
           </Col>
           <Col>
             <Card>
-              <Card.Img variant="top" src={img2} />
+              <Card.Title className="title-card color-white">Сайт-портфолио</Card.Title>
+              <Card.Img className="img-filter" variant="top" src={img2} />
               <Card className="card-hover">
                 <Card.Body>
                   <Card.Title>Сайт-портфолио</Card.Title>
@@ -55,11 +57,12 @@ const Portfolio = () => {
           </Col>
           <Col>
             <Card>
+              <Card.Title className="title-card">GitHub</Card.Title>
               <Card.Img className="img-filter" variant="top" src={img3} />
               <Card className="card-hover">
                 <Card.Body>
-                  <Card.Title>Сервис для изучения английского язык</Card.Title>
-                  <Card.Text>Vue.js/Python/Django </Card.Text>
+                  <Card.Title>GitHub</Card.Title>
+                  <Card.Text> </Card.Text>
                   <Card.Link href="https://github.com/Shuman-Olga">
                     <Button variant="outline-dark">Посмотреть</Button>
                   </Card.Link>
