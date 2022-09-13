@@ -13,12 +13,10 @@ const Skystar = () => {
     setHeightWindow(window.innerHeight - 50);
   };
   useEffect(() => {
-    console.log(widthWindow, heightWindow);
     window.addEventListener('resize', handleResize);
     init();
   });
   const init = () => {
-    console.log(widthWindow, heightWindow);
     function getRandomArbitrary(min, max) {
       return Math.floor(Math.random() * (max - min)) + min;
     }

@@ -51,3 +51,12 @@
     filter: blur(1px);
   }
 }
+@media (max-widht: 480px) {
+  #portfolio {
+    .card {
+      &:hover {
+        top: 20%;
+      }
+    }
+  }
+}
