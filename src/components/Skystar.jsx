@@ -7,10 +7,10 @@ import imgCity from '../assets/img/pole.png';
 const Skystar = () => {
   const countStars = 400;
   const [widthWindow, setWidthWindow] = useState(window.innerWidth - 20);
-  const [heightWindow, setHeightWindow] = useState(window.innerHeight - 200);
+  const [heightWindow, setHeightWindow] = useState(window.innerHeight - 20);
   const handleResize = () => {
-    setWidthWindow(window.innerWidth);
-    setHeightWindow(window.innerHeight);
+    setWidthWindow(window.innerWidth - 50);
+    setHeightWindow(window.innerHeight - 50);
   };
   useEffect(() => {
     console.log(widthWindow, heightWindow);

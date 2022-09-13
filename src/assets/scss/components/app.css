@@ -277,7 +277,7 @@ header {
 }
 #skystar {
   margin: 0;
-  height: 100vh;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -430,7 +430,7 @@ header {
 #skystar .glade {
   left: 0;
   bottom: 0;
-  width: 100%;
+  height: 100vh;
 }
 #skystar .glade img {
   width: 100%;
@@ -750,12 +750,6 @@ header {
   }
 }
 
-@media (max-width: 786px) {
-  #skystar {
-    width: 100vw;
-    height: 100vh;
-  }
-}
 @media (max-width: 480px) {
   #skystar .arrow {
     width: 50px;
@@ -1003,6 +997,15 @@ hr.style1 {
   background: linear-gradient(45deg, rgba(227, 227, 227, 0.5) 35%, rgba(193, 199, 199, 0.5) 94%);
 }
 
+@media (max-width: 768px) {
+  #skills,
+#about,
+#portfolio,
+#contacts {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
 @media (max-width: 480px) {
   #skills,
 #about,
