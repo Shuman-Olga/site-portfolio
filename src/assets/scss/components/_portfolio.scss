@@ -11,6 +11,7 @@
   }
   .card {
     border-radius: 0;
+
     &:hover {
       .card-hover {
         top: 30%;
@@ -20,7 +21,20 @@
         transform: scale(1.1);
         opacity: 0.4;
       }
+      .title-card {
+        opacity: 0;
+      }
     }
+  }
+  .title-card {
+    position: absolute;
+    padding-top: 10%;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+  .color-white {
+    color: white;
   }
   .card:hover .card-hover p {
     opacity: 1;
@@ -44,7 +58,6 @@
     }
   }
   button {
-    margin-top: 1rem;
     border-radius: 0;
   }
   .img-filter {
