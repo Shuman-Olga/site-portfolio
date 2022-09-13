@@ -87,7 +87,6 @@ const Contacts = () => {
               <div className="col d-flex justify-content-end" data-aos="slide-right">
                 <div className={successful ? 'alert ' : 'alert alert-danger'} role="alert">
                   <img src={imgMail} alt="img-email" />
-                  {/* {message} */}
                 </div>
               </div>
             )}

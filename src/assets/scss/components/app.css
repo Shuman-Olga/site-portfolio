@@ -98,46 +98,43 @@ header {
   display: contents;
 }
 
-.butterfly {
+#butterfly .butterfly {
   position: absolute;
-  width: 250px;
-  height: 212px;
+  width: 15em;
+  height: 8em;
   transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
   transform-origin: 100% 0%;
   transform-style: preserve-3d;
 }
-
-.one {
+#butterfly .one {
   top: 60%;
   left: 10%;
   -webkit-animation: butterfly1 5s linear infinite;
   animation: butterfly1 5s linear infinite;
 }
-.one .leftwing-one {
+#butterfly .one .leftwing-one {
   background: url("../../img/butterfly/wing2.png") no-repeat;
   background-size: contain;
 }
-.one .rightwing-one {
+#butterfly .one .rightwing-one {
   background: url("../../img/butterfly/wing2.png") no-repeat;
   background-size: contain;
 }
-
-.two {
+#butterfly .two {
   top: 40%;
   left: 50%;
   -webkit-animation: butterfly2 5s linear infinite;
   animation: butterfly2 5s linear infinite;
 }
-.two .leftwing-two {
+#butterfly .two .leftwing-two {
   background: url("../../img/butterfly/wing3.png") no-repeat;
   background-size: contain;
 }
-.two .rightwing-two {
+#butterfly .two .rightwing-two {
   background: url("../../img/butterfly/wing3.png") no-repeat;
   background-size: contain;
 }
-
-.leftwing {
+#butterfly .leftwing {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -148,8 +145,7 @@ header {
   -webkit-animation: leftwing 0.2s linear infinite;
   animation: leftwing 0.2s linear infinite;
 }
-
-.rightwing {
+#butterfly .rightwing {
   position: absolute;
   left: 178px;
   top: 0px;
@@ -160,7 +156,6 @@ header {
   -webkit-animation: rightwing 0.2s linear infinite;
   animation: rightwing 0.2s linear infinite;
 }
-
 @-webkit-keyframes butterfly1 {
   from {
     -webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
@@ -273,6 +268,13 @@ header {
     transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
   }
 }
+
+@media (max-width: 480px) {
+  #butterfly .butterfly {
+    width: 5em;
+    height: 5em;
+  }
+}
 #skystar {
   margin: 0;
   height: 100vh;
@@ -280,57 +282,21 @@ header {
   justify-content: center;
   align-items: center;
 }
-
-#stars {
-  width: 3px;
-  height: 3px;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 50%;
-  transform-origin: 0 0;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  -webkit-animation: rotate 270s infinite linear;
-          animation: rotate 270s infinite linear;
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.sky {
+#skystar .sky {
   background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(52, 45, 68) 80%, rgb(76, 70, 90));
   width: 100%;
   height: 100%;
   position: absolute;
   overflow: hidden;
 }
-
-.constellation {
+#skystar .constellation {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
 }
-
-.star {
+#skystar .star {
   background-color: white;
   border-radius: 50%;
   position: absolute;
@@ -341,63 +307,52 @@ header {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-
-.star.style1 {
+#skystar .star.style1 {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-name: star;
           animation-name: star;
 }
-
-.star.style2 {
+#skystar .star.style2 {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-name: star;
           animation-name: star;
 }
-
-.star.style3 {
+#skystar .star.style3 {
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
   -webkit-animation-name: star;
           animation-name: star;
 }
-
-.star.style4 {
+#skystar .star.style4 {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-name: starBig;
           animation-name: starBig;
 }
-
-.star.size1 {
+#skystar .star.size1 {
   width: 1px;
   height: 1px;
 }
-
-.star.size2 {
+#skystar .star.size2 {
   width: 2px;
   height: 2px;
 }
-
-.star.size3 {
+#skystar .star.size3 {
   width: 3px;
   height: 3px;
 }
-
-.star.opacity1 {
+#skystar .star.opacity1 {
   opacity: 1;
 }
-
-.star.opacity2 {
+#skystar .star.opacity2 {
   opacity: 0.5;
 }
-
-.star.opacity3 {
+#skystar .star.opacity3 {
   opacity: 0.1;
 }
-
-.meteor {
+#skystar .meteor {
   position: absolute;
   background-color: #fff;
   width: 2px;
@@ -411,8 +366,7 @@ header {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
-
-.meteor:before {
+#skystar .meteor:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -426,28 +380,23 @@ header {
   left: 2px;
   top: 0;
 }
-
-.meteor.style1 {
+#skystar .meteor.style1 {
   -webkit-animation-name: meteorStyle1;
           animation-name: meteorStyle1;
 }
-
-.meteor.style2 {
+#skystar .meteor.style2 {
   -webkit-animation-name: meteorStyle2;
           animation-name: meteorStyle2;
 }
-
-.meteor.style3 {
+#skystar .meteor.style3 {
   -webkit-animation-name: meteorStyle3;
           animation-name: meteorStyle3;
 }
-
-.meteor.style4 {
+#skystar .meteor.style4 {
   -webkit-animation-name: meteorStyle4;
           animation-name: meteorStyle4;
 }
-
-.luna {
+#skystar .luna {
   position: absolute;
   right: 200px;
   top: 150px;
@@ -465,8 +414,7 @@ header {
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
 }
-
-.luna .textura {
+#skystar .luna.textura {
   background-image: url("../../img/bgMoon.png");
   background-position: center;
   background-size: 100%;
@@ -479,20 +427,17 @@ header {
   overflow: hidden;
   opacity: 0.4;
 }
-
-.glade {
+#skystar .glade {
   left: 0;
   bottom: 0;
   width: 100%;
 }
-
-.glade img {
+#skystar .glade img {
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
 }
-
 @-webkit-keyframes dim {
   0% {
     top: 0;
@@ -501,7 +446,6 @@ header {
     top: 100%;
   }
 }
-
 @keyframes dim {
   0% {
     top: 0;
@@ -734,6 +678,14 @@ header {
     box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
   }
 }
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
 @keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -742,14 +694,13 @@ header {
     -webkit-transform: rotate(360deg);
   }
 }
-.arrow {
+#skystar .arrow {
   position: absolute;
   width: 100px;
   height: 100px;
 }
-
-.arrow:before,
-.arrow:after {
+#skystar .arrow:before,
+#skystar .arrow:after {
   content: "";
   position: absolute;
   box-sizing: border-box;
@@ -760,12 +711,10 @@ header {
   -webkit-animation: arrow 3s linear infinite;
           animation: arrow 3s linear infinite;
 }
-
-.arrow:after {
+#skystar .arrow:after {
   -webkit-animation: arrow 3s linear infinite -1.5s;
           animation: arrow 3s linear infinite -1.5s;
 }
-
 @-webkit-keyframes arrow {
   0% {
     opacity: 0;
@@ -783,7 +732,6 @@ header {
     transform: translate(0, 53px) rotate(-45deg);
   }
 }
-
 @keyframes arrow {
   0% {
     opacity: 0;
@@ -801,6 +749,13 @@ header {
     transform: translate(0, 53px) rotate(-45deg);
   }
 }
+
+@media (max-width: 480px) {
+  #skystar .arrow {
+    width: 50px;
+    height: 50px;
+  }
+}
 #about {
   padding: 4rem 0;
 }
@@ -808,6 +763,14 @@ header {
   max-height: 50vh;
 }
 
+@media (max-width: 480px) {
+  #about .row {
+    display: block;
+  }
+  #about p {
+    padding-top: 15px;
+  }
+}
 #skills p {
   margin: 0;
 }
@@ -820,9 +783,15 @@ header {
   transition: all 1s ease;
 }
 #skills .card:hover {
-  transform: rotate(15deg);
+  transform: rotate(5deg);
 }
 
+@media (max-width: 768px) {
+  #skills .card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px var(--box-shadow-color);
+  }
+}
 #contacts p {
   font-size: x-large;
 }
@@ -840,6 +809,11 @@ header {
   height: 2rem;
 }
 
+@media (max-width: 480px) {
+  #contacts form {
+    width: 100vw;
+  }
+}
 #portfolio .card,
 #portfolio .card img,
 #portfolio .card-hover,
@@ -984,9 +958,15 @@ header {
   transition: all 1s ease;
 }
 #skills .card:hover {
-  transform: rotate(15deg);
+  transform: rotate(5deg);
 }
 
+@media (max-width: 768px) {
+  #skills .card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px var(--box-shadow-color);
+  }
+}
 hr.style1 {
   border-top: 5px solid rgb(66, 0, 248);
   opacity: 1;
@@ -1015,4 +995,14 @@ hr.style1 {
 #skills,
 #contacts {
   background: linear-gradient(45deg, rgba(227, 227, 227, 0.5) 35%, rgba(193, 199, 199, 0.5) 94%);
+}
+
+@media (max-width: 480px) {
+  #skills,
+#about,
+#portfolio,
+#contacts {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }/*# sourceMappingURL=app.css.map */
