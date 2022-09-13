@@ -326,6 +326,12 @@
     }
   }
 }
+@media (max-width: 786px) {
+  #skystar {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 @media (max-width: 480px) {
   #skystar {
     .arrow {
