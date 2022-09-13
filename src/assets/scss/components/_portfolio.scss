@@ -51,11 +51,13 @@
     filter: blur(1px);
   }
 }
-@media (max-widht: 480px) {
+@media (max-width: 480px) {
   #portfolio {
     .card {
       &:hover {
-        top: 20%;
+        .card-hover {
+          top: 20%;
+        }
       }
     }
   }

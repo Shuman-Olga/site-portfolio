@@ -864,8 +864,8 @@ header {
   filter: blur(1px);
 }
 
-@media (max-widht: 480px) {
-  #portfolio .card:hover {
+@media (max-width: 480px) {
+  #portfolio .card:hover .card-hover {
     top: 20%;
   }
 }
