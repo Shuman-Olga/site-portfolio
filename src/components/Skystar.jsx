@@ -6,17 +6,19 @@ import imgCity from '../assets/img/pole.png';
 
 const Skystar = () => {
   const countStars = 400;
-  const [widthWindow, setWidthWindow] = useState(window.innerWidth - 50);
-  const [heightWindow, setHeightWindow] = useState(window.innerHeight - 50);
+  const [widthWindow, setWidthWindow] = useState(window.innerWidth);
+  const [heightWindow, setHeightWindow] = useState(window.innerHeight);
   const handleResize = () => {
-    setWidthWindow(window.innerWidth - 20);
-    setHeightWindow(window.innerHeight - 20);
+    setWidthWindow(window.innerWidth);
+    setHeightWindow(window.innerHeight);
   };
   useEffect(() => {
+    console.log(widthWindow, heightWindow);
     window.addEventListener('resize', handleResize);
     init();
   });
   const init = () => {
+    console.log(widthWindow, heightWindow);
     function getRandomArbitrary(min, max) {
       return Math.floor(Math.random() * (max - min)) + min;
     }
