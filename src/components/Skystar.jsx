@@ -1,8 +1,8 @@
-import imgCity from '../assets/img/pole.png';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
 import { Style, Size, Opacity } from '../assets/constants';
-import { useState } from 'react';
 import Butterfly from './Butterfly';
+import imgCity from '../assets/img/pole.png';
 
 const Skystar = () => {
   const countStars = 400;
@@ -21,6 +21,7 @@ const Skystar = () => {
       return Math.floor(Math.random() * (max - min)) + min;
     }
     let sky = document.querySelector('.constellation');
+    // stars
     let star = '';
     for (let i = 0; i < countStars; i++) {
       star +=
@@ -40,9 +41,7 @@ const Skystar = () => {
     }
 
     sky.innerHTML = star;
-
     //meteors
-
     let number = 5000;
 
     setTimeout(function () {
@@ -62,19 +61,14 @@ const Skystar = () => {
   return (
     <div id="skystar">
       <div className="sky"></div>
-
       <div className="constellation"></div>
-
       <div className="luna">
         <div className="textura"></div>
       </div>
-
       <div className="meteorRain"></div>
-
       <div className="glade">
         <img src={imgCity} alt="img-city-black"></img>
       </div>
-
       <div className="arrow"></div>
       <Butterfly />
     </div>

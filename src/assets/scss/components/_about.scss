@@ -4,3 +4,14 @@
     max-height: 50vh;
   }
 }
+
+@media (max-width: 480px) {
+  #about {
+    .row {
+      display: block;
+    }
+    p {
+      padding-top: 15px;
+    }
+  }
+}

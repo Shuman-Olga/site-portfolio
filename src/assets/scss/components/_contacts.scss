@@ -16,3 +16,11 @@
     height: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  #contacts {
+    form {
+      width: 100vw;
+    }
+  }
+}

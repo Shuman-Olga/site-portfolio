@@ -1,6 +1,6 @@
 @import './_navigate';
 @import './_footer';
-@import './_hader';
+@import './_header';
 @import './_butterfly';
 @import './_starsky';
 @import './_about';
@@ -43,4 +43,13 @@ hr.style1 {
   );
   background: -moz-linear-gradient(45deg, rgb(227, 227, 227, 0.5) 35%, rgb(193, 199, 199, 0.5) 94%);
   background: linear-gradient(45deg, rgb(227, 227, 227, 0.5) 35%, rgb(193, 199, 199, 0.5) 94%);
+}
+@media (max-width: 480px) {
+  #skills,
+  #about,
+  #portfolio,
+  #contacts {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
