@@ -9,8 +9,8 @@ const Skystar = () => {
   const [widthWindow, setWidthWindow] = useState(window.innerWidth - 20);
   const [heightWindow, setHeightWindow] = useState(window.innerHeight - 20);
   const handleResize = () => {
-    setWidthWindow(window.innerWidth - 50);
-    setHeightWindow(window.innerHeight - 50);
+    setWidthWindow(window.innerWidth);
+    setHeightWindow(window.innerHeight);
   };
   useEffect(() => {
     window.addEventListener('resize', handleResize);
