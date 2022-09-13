@@ -44,6 +44,15 @@ hr.style1 {
   background: -moz-linear-gradient(45deg, rgb(227, 227, 227, 0.5) 35%, rgb(193, 199, 199, 0.5) 94%);
   background: linear-gradient(45deg, rgb(227, 227, 227, 0.5) 35%, rgb(193, 199, 199, 0.5) 94%);
 }
+@media (max-width: 768px) {
+  #skills,
+  #about,
+  #portfolio,
+  #contacts {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
 @media (max-width: 480px) {
   #skills,
   #about,
