@@ -864,6 +864,11 @@ header {
   filter: blur(1px);
 }
 
+@media (max-widht: 480px) {
+  #portfolio .card:hover {
+    top: 20%;
+  }
+}
 .wrapper-loader {
   margin: 0;
   height: 100vh;
