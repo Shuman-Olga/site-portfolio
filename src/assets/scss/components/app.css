@@ -775,11 +775,10 @@ header {
   margin: 0;
 }
 #skills .card {
+  cursor: pointer;
   border: 0;
   border-radius: 0;
   box-shadow: 0px 5px 31px 8px rgba(34, 60, 80, 0.18);
-}
-#skills .card {
   transition: all 1s ease;
 }
 #skills .card:hover {
@@ -967,11 +966,10 @@ header {
   margin: 0;
 }
 #skills .card {
+  cursor: pointer;
   border: 0;
   border-radius: 0;
   box-shadow: 0px 5px 31px 8px rgba(34, 60, 80, 0.18);
-}
-#skills .card {
   transition: all 1s ease;
 }
 #skills .card:hover {
