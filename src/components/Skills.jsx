@@ -38,6 +38,7 @@ const Skills = () => {
                 <p>Bootstrap</p>
                 <p>GitHub</p>
                 <p>Sublime Merge</p>
+                <p>Webpack</p>
               </Card.Body>
             </Card>
           </Col>
