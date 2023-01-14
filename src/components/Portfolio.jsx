@@ -1,17 +1,18 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
+import { useEffect } from "react";
+import AOS from "aos";
 
-import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 
-import img1 from '../assets/img/helptense.png';
-import img2 from '../assets/img/mysite.png';
-import img3 from '../assets/img/my_github.png';
-import img4 from '../assets/img/aibolit.png';
-import img5 from '../assets/img/aibolit2.png';
+import img1 from "../assets/img/helptense.png";
+import img2 from "../assets/img/mysite.png";
+import img3 from "../assets/img/my_github.png";
+import img4 from "../assets/img/aibolit.png";
+import img5 from "../assets/img/aibolit2.png";
+import img6 from "../assets/img/aibolit-site.png";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -20,7 +21,10 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <Container>
-        <div data-aos="slide-right" className="title d-flex justify-content-end">
+        <div
+          data-aos="slide-right"
+          className="title d-flex justify-content-end"
+        >
           <div>
             <h2>Портфолио</h2>
             <hr className="style1"></hr>
@@ -44,7 +48,26 @@ const Portfolio = () => {
           </Col>
           <Col>
             <Card className="shadow p-3 mb-5 bg-white rounded">
-              <Card.Title className="title-card color-white">Сайт-портфолио</Card.Title>
+              <Card.Title className="title-card ">
+                Сайт для клиники Айболит
+              </Card.Title>
+              <Card.Img className="img-filter" variant="top" src={img6} />
+              <Card className="card-hover">
+                <Card.Body>
+                  <Card.Title>Сайт клиники Айболит</Card.Title>
+                  <Card.Text>React+JWT+Bootstrap+Scss+CSS </Card.Text>
+                  <Card.Link href="https://aibolit.tom.ru/">
+                    <Button variant="outline-dark">Посмотреть</Button>
+                  </Card.Link>
+                </Card.Body>
+              </Card>
+            </Card>
+          </Col>
+          <Col>
+            <Card className="shadow p-3 mb-5 bg-white rounded">
+              <Card.Title className="title-card color-white">
+                Сайт-портфолио
+              </Card.Title>
               <Card.Img className="img-filter" variant="top" src={img2} />
               <Card className="card-hover">
                 <Card.Body>
@@ -59,7 +82,9 @@ const Portfolio = () => {
           </Col>
           <Col>
             <Card className="shadow p-3 mb-5 bg-white rounded">
-              <Card.Title className="title-card">Сервис для изучения английского язык</Card.Title>
+              <Card.Title className="title-card">
+                Сервис для изучения английского язык
+              </Card.Title>
               <Card.Img className="img-filter" variant="top" src={img1} />
               <Card className="card-hover">
                 <Card.Body>
@@ -76,7 +101,9 @@ const Portfolio = () => {
         <Row xs={1} md={3} className="g-4 ">
           <Col>
             <Card className="shadow p-3 mb-5 bg-white rounded">
-              <Card.Title className="title-card">Сервис для клиники(server)</Card.Title>
+              <Card.Title className="title-card">
+                Сервис для клиники(server)
+              </Card.Title>
               <Card.Img className="img-filter" variant="top" src={img4} />
               <Card className="card-hover">
                 <Card.Body>
@@ -91,7 +118,9 @@ const Portfolio = () => {
           </Col>
           <Col>
             <Card className="shadow p-3 mb-5 bg-white rounded">
-              <Card.Title className="title-card ">Сервис для клиники(client)</Card.Title>
+              <Card.Title className="title-card ">
+                Сервис для клиники(client)
+              </Card.Title>
               <Card.Img className="img-filter" variant="top" src={img5} />
               <Card className="card-hover">
                 <Card.Body>
