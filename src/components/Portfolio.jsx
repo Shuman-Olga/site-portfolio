@@ -80,6 +80,8 @@ const Portfolio = () => {
               </Card>
             </Card>
           </Col>
+        </Row>
+        <Row xs={1} md={3} className="g-4 ">
           <Col>
             <Card className="shadow p-3 mb-5 bg-white rounded">
               <Card.Title className="title-card">
@@ -97,8 +99,6 @@ const Portfolio = () => {
               </Card>
             </Card>
           </Col>
-        </Row>
-        <Row xs={1} md={3} className="g-4 ">
           <Col>
             <Card className="shadow p-3 mb-5 bg-white rounded">
               <Card.Title className="title-card">
