@@ -1,15 +1,15 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
+import { useEffect } from "react";
+import AOS from "aos";
 
-import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-import img1 from '../assets/img/skills/skills-frontend.png';
-import img2 from '../assets/img/skills/skills-backend.png';
-import img3 from '../assets/img/skills/skills-hard.png';
-import img4 from '../assets/img/skills/skills-soft.png';
+import img1 from "../assets/img/skills/skills-frontend.png";
+import img2 from "../assets/img/skills/skills-backend.png";
+import img3 from "../assets/img/skills/skills-hard.png";
+import img4 from "../assets/img/skills/skills-soft.png";
 
 const Skills = () => {
   useEffect(() => {
@@ -18,7 +18,10 @@ const Skills = () => {
   return (
     <section id="skills">
       <Container>
-        <div data-aos="slide-right" className="title d-flex justify-content-end">
+        <div
+          data-aos="slide-right"
+          className="title d-flex justify-content-end"
+        >
           <div>
             <h2>Skills</h2>
             <hr className="style1"></hr>
@@ -31,7 +34,7 @@ const Skills = () => {
               <Card.Body>
                 <Card.Title>Hard skills/front-end</Card.Title>
                 <p>HTML5</p>
-                <p>CSS3/SASS?SCSS</p>
+                <p>CSS3/SASS/SCSS</p>
                 <p>Java Script ES6</p>
                 <p>React js</p>
                 <p>Vue.js</p>

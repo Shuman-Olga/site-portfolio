@@ -55,7 +55,7 @@ const Portfolio = () => {
               <Card className="card-hover">
                 <Card.Body>
                   <Card.Title>Сайт клиники Айболит</Card.Title>
-                  <Card.Text>React+JWT+Bootstrap+Scss+CSS </Card.Text>
+                  <Card.Text>React+Bootstrap+Scss+SEO </Card.Text>
                   <Card.Link href="https://aibolit.tom.ru/">
                     <Button variant="outline-dark">Посмотреть</Button>
                   </Card.Link>
