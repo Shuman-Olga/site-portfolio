@@ -46,7 +46,7 @@ const About = () => {
                 <br />
                 Порядка 5 лет занимаюсь обслуживанием и развитием сайтов для
                 двух компаний:
-                <a href="https://aibolit.tom.ru" className="link-secondary">
+                <a href="https://psyvtomske.ru" className="link-secondary">
                   {" "}
                   https://psyvtomske.ru
                 </a>{" "}
