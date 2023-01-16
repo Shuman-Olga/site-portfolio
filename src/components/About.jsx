@@ -35,16 +35,26 @@ const About = () => {
                 Приложение записи пациентов и оформления вызовов. Использую
                 React js+Node.js+MySQL.
                 <br /> Разработала сайт для клиники
-                <a href="https://aibolit.tom.ru">https://aibolit.tom.ru</a>.
-                Использовала React js+Bootstrap+настройка SEO. Деплой на
+                <a href="https://aibolit.tom.ru" className="link-secondary">
+                  {" "}
+                  https://aibolit.tom.ru
+                </a>
+                . Использовала React js+Bootstrap+настройка SEO. Деплой на
                 хостинг.
                 <br /> Учавствовала в командной разработке проекта, по изучению
                 иностранных языков.
                 <br />
                 Порядка 5 лет занимаюсь обслуживанием и развитием сайтов для
                 двух компаний:
-                <a href="https://aibolit.tom.ru">https://psyvtomske.ru</a> и
-                <a href="https://aibolit.tom.ru">https://aibolit.tom.ru</a>
+                <a href="https://aibolit.tom.ru" className="link-secondary">
+                  {" "}
+                  https://psyvtomske.ru
+                </a>{" "}
+                и
+                <a href="https://aibolit.tom.ru" className="link-secondary">
+                  {" "}
+                  https://aibolit.tom.ru
+                </a>
                 SEO и SMM продвижение (сайты находятся в топ ) в поисковых
                 системах, таргетированная и контекстная реклама.
               </p>
