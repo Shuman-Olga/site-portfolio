@@ -30,32 +30,31 @@ const About = () => {
             </div>
             <div className="col text-col">
               <p>
-                Меня зовут, Шуман Ольга. Я Frontend-разработчик. В настоящее
-                время работаю над web-приложением для медицинской клинике.
+                Меня зовут, Ольга Шуман. Я Frontend-разработчик. В настоящее
+                время работаю над web-приложением для медицинской клиники.
                 Приложение записи пациентов и оформления вызовов. Использую
-                React js+Node.js+MySQL.
-                <br /> Разработала сайт для клиники
+                React js+Node.js+MySQL. ,<br />
+                <br /> Разработала сайт для клиники&nbsp;
                 <a href="https://aibolit.tom.ru" className="link-secondary">
-                  {" "}
                   https://aibolit.tom.ru
                 </a>
                 . Использовала React js+Bootstrap+настройка SEO. Деплой на
                 хостинг.
+                <br />
                 <br /> Учавствовала в командной разработке проекта, по изучению
                 иностранных языков.
                 <br />
+                <br />
                 Порядка 5 лет занимаюсь обслуживанием и развитием сайтов для
-                двух компаний:
+                двух компаний:&nbsp;
                 <a href="https://psyvtomske.ru" className="link-secondary">
-                  {" "}
                   https://psyvtomske.ru
                 </a>{" "}
-                и
+                &nbsp;и&nbsp;
                 <a href="https://aibolit.tom.ru" className="link-secondary">
-                  {" "}
                   https://aibolit.tom.ru
                 </a>
-                SEO и SMM продвижение (сайты находятся в топ ) в поисковых
+                &nbsp;SEO и SMM продвижение (сайты находятся в топ ) в поисковых
                 системах, таргетированная и контекстная реклама.
               </p>
             </div>
