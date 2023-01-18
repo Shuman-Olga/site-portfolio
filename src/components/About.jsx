@@ -33,7 +33,8 @@ const About = () => {
                 Меня зовут, Ольга Шуман. Я Frontend-разработчик. В настоящее
                 время работаю над web-приложением для медицинской клиники.
                 Приложение записи пациентов и оформления вызовов. Использую
-                React js+Node.js+MySQL. ,<br />
+                React js+Node.js+MySQL.
+                <br />
                 <br /> Разработала сайт для клиники&nbsp;
                 <a href="https://aibolit.tom.ru" className="link-secondary">
                   https://aibolit.tom.ru
